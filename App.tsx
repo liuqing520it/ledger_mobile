@@ -5,7 +5,7 @@
  * @format
  */
 import { Provider } from "react-redux";
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from "@reduxjs/toolkit";
 import { appReducer } from "./src/rootRedux/appReducer";
 import { Icon } from "./src/utils/iconFont/Icon";
 import React from "react";
@@ -17,10 +17,13 @@ import {
 // const store = configureStore({reducer: appReducer});
 function App() {
   return (
-    <View style={{flex: 1, justifyContent:'center', alignItems:'center'}}>
-      <Icon name={'xianshimima'} onPress={()=>Alert.alert('123')}/>
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Icon name={"xianshimima"}
+            size={45}
+            color={"red"}
+            onPress={() => Alert.alert("123")} />
     </View>
-  )
+  );
   // return (
   //   <Provider store={store}>
   //

@@ -5,7 +5,7 @@ from fontTools.ttLib import TTFont
 tmpl = """
 const iconFontMap = {%s};
 
-export default function IconFont(name: string) {
+export default function IconMap(name: string) {
     // @ts-ignore
     return String.fromCharCode(iconFontMap[name])
 }

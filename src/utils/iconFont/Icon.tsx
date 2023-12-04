@@ -7,7 +7,7 @@ import {
   ViewStyle
 } from 'react-native';
 
-import IconFont from './IconFont';
+import IconMap from './IconMap';
 import Colors from "../color/Colors";
 
 export interface IconProps {
@@ -63,7 +63,7 @@ export function Icon(props: IconProps) {
     <Pressable style={containerStyle}
                onPress={iconOnPres}
                disabled={disabled}>
-      <Text style={iconStyle}>{IconFont(iconName)}</Text>
+      <Text style={iconStyle}>{IconMap(iconName)}</Text>
     </Pressable>
   );
 }

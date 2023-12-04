@@ -1,12 +1,13 @@
 
-const iconFontMap = {"xuanzhong":"58893",
+const iconFontMap = {
+"xuanzhong":"58893",
 "not_Selected-copy":"58917",
 "iconfontjiantou5":"58933",
 "xianshimima":"58954",
 "yincangmima":"58955",
 };
 
-export default function IconFont(name: string) {
+export default function IconMap(name: string) {
     // @ts-ignore
     return String.fromCharCode(iconFontMap[name])
 }
