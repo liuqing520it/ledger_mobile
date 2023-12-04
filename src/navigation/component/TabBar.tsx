@@ -1,6 +1,7 @@
 import {BottomTabBar, createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import React from "react";
-import { View } from "react-native";
+import { Image, View } from "react-native";
+import Colors from "../../classses/utils/color/Colors";
 
 const Tab = createBottomTabNavigator();
 
@@ -25,21 +26,21 @@ export default function TabBar(){
               }
               return <Image source={iconSource} style={{ width: 24, height: 24 }} />;
             },
-            tabBarActiveTintColor: HBJColors.theme.primary,
-            tabBarInactiveTintColor: HBJColors.text.light,
+            tabBarActiveTintColor: Colors.theme,
+            tabBarInactiveTintColor: Colors.text.light,
             lazy: false,
           })}>
-        <Tab.Screen name={'首页'}
-                    component={MainScreen}
-        />
-        <Tab.Screen name={'工作台'}
-                    options={{headerShown: false}}
-                    component={WorkbenchScreen}
-        />
+        {/*<Tab.Screen name={'首页'}*/}
+        {/*            component={MainScreen}*/}
+        {/*/>*/}
+        {/*<Tab.Screen name={'工作台'}*/}
+        {/*            options={{headerShown: false}}*/}
+        {/*            component={WorkbenchScreen}*/}
+        {/*/>*/}
 
-        <Tab.Screen name={'我的'}
-                    component={ProfileScreen}
-        />
+        {/*<Tab.Screen name={'我的'}*/}
+        {/*            component={ProfileScreen}*/}
+        {/*/>*/}
       </Tab.Navigator>
   );
 }

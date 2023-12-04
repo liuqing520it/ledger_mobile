@@ -5,12 +5,12 @@ from fontTools.ttLib import TTFont
 tmpl = """
 const iconFontMap = {%s};
 
-export default function iconFont(name: string) {
+export default function IconFont(name: string) {
     // @ts-ignore
     return String.fromCharCode(iconFontMap[name])
 }
 
-export function iconFonts(names: Array<string>){
+export function IconFonts(names: Array<string>){
     let result = [];
     for (let i=0; i<names.length; i++){
         // @ts-ignore
@@ -25,9 +25,8 @@ def main(fontFile, output):
     try:
         font = TTFont(fontFile)
         glyphMap = font["cmap"].getcmap(3,1).cmap
-        print(font.keys())
-        print(font.getGlyphNames())
-        print(glyphMap)
+
+
 
         tmp = ""
         for k in glyphMap:
