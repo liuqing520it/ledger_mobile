@@ -13,7 +13,6 @@
 
 
 ### 2.目前项目的使用现状
-##### 摘取一段代码
 ```javascript
 import React,{Component,} from 'react';
 import {Text,} from 'react-native';
@@ -442,12 +441,13 @@ Icon.defaultProps = {
 
 具体步骤
 1. 阿里官网添加需要的图片,点击下载到本地
-![e4ff6480844a2f6e221c09d6e6fe0bff.jpg](..%2F..%2FLibrary%2FContainers%2Fcom.tencent.xinWeChat%2FData%2FLibrary%2FCaches%2Fcom.tencent.xinWeChat%2F2.0b4.0.9%2Fd3524b7df1e0d737fc8c6db7e541280c%2FNoteDragTmp%2F1701705954%2Fe4ff6480844a2f6e221c09d6e6fe0bff.jpg)
+![e4ff6480844a2f6e221c09d6e6fe0bff.jpg](..%2F..%2FLibrary%2FContainers%2Fcom.tencent.xinWeChat%2FData%2FLibrary%2FCaches%2Fcom.tencent.xinWeChat%2F2.0b4.0.9%2Fd3524b7df1e0d737fc8c6db7e541280c%2FNoteDragTmp%2F1701736007%2Fe4ff6480844a2f6e221c09d6e6fe0bff.jpg)
 2. 打开压缩包,里面有一堆的.json .ttf .js .css等文件
-![cacb5b41b8e564a540f2205da9750cdd.jpg](..%2F..%2FLibrary%2FContainers%2Fcom.tencent.xinWeChat%2FData%2FLibrary%2FCaches%2Fcom.tencent.xinWeChat%2F2.0b4.0.9%2Fd3524b7df1e0d737fc8c6db7e541280c%2FNoteDragTmp%2F1701705970%2Fcacb5b41b8e564a540f2205da9750cdd.jpg)
+   
+   ![cacb5b41b8e564a540f2205da9750cdd.jpg](..%2F..%2FLibrary%2FContainers%2Fcom.tencent.xinWeChat%2FData%2FLibrary%2FCaches%2Fcom.tencent.xinWeChat%2F2.0b4.0.9%2Fd3524b7df1e0d737fc8c6db7e541280c%2FNoteDragTmp%2F1701736014%2Fcacb5b41b8e564a540f2205da9750cdd.jpg)
+
 3. 执行脚本文件 python FontConversion.py iconfont.ttf IconMap.ts
 4. 完成之后会得到一个映射Map
-5. 每次新增icon重新执行一下FontConversion脚本, 映射文件相应的会更新,不用增加任何代码
 ```typescript
 
 const iconFontMap = {
@@ -464,6 +464,7 @@ export default function IconMap(name: string) {
 }
 
 ```
+5. 每次新增icon重新执行一下FontConversion脚本, 映射文件相应的会更新,不用增加任何代码
 
 >使用示例
  

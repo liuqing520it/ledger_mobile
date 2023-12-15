@@ -1,7 +1,7 @@
 import {BottomTabBar, createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import React from "react";
 import { Image, View } from "react-native";
-import Colors from "../../classses/utils/color/Colors";
+import Colors from "../../utils/color/Colors";
 
 const Tab = createBottomTabNavigator();
 
